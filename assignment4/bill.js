@@ -1,14 +1,17 @@
 var units=260;
 var s1=0;
+var fifty=50*2.5;
+var hundred=50*4;
+var twohundred=100*6;
 function bill(units){
     if(units<=50){
             s1=units*2.5;
         } else if (units<=100){
-    s1=50*2.5+(units-50)*4;
+    s1=fifty+(units-50)*4;
     } else if (units<=200){
-    s1=50*2.5+50*4+(units-100)*6;
+    s1=fifty+hundred+(units-100)*6;
     } else {
-        s1=50*2.5+50*4+100*6+(units-200)*8;
+        s1=fifty+hundred+twohundred+(units-200)*8;
     }
     return s1;
 }
@@ -42,4 +45,5 @@ console.log("Total bill is:",bill(units));
 // else {
 //     console.log("Total bill is:",above(units));
 // }
+
 
