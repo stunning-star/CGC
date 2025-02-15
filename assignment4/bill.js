@@ -17,7 +17,7 @@ function bill(units){
 }
 console.log("Total bill is:",bill(units));
 
-//  Approach : 2
+// Approach : 2
 // var result=0;
 // function fifty(units){
 //     result=units*2.5;
